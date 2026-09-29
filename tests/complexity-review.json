@@ -1,0 +1,2 @@
+{"should_fire":["Can you do an APOSD-style review of my branch? I want to know if the design is getting too complex.","This module feels really hard to change — every small feature touches five files. Review the design and tell me why.","Check this PR against A Philosophy of Software Design red flags."],
+"decoys":["Review this PR for whether it implements what issue #42 asked for.","Clean up this function, it has some redundant variables.","My test is failing with a nil pointer, help me debug it."]}

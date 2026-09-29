@@ -1,0 +1,2 @@
+{"should_fire":["I need to build a rate limiter module. Before coding, give me a few alternative API designs and pick the best.","What should the API look like for a new text buffer class in our editor? Design it twice.","I'm about to write a new cache package from scratch; help me design its interface first."],
+"decoys":["Which HTTP router library should I use in Go?","Review the existing cache package for design problems.","Implement the rate limiter exactly as specified in docs/spec.md."]}

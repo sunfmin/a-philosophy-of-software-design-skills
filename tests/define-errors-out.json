@@ -1,0 +1,2 @@
+{"should_fire":["Our Go service has if err != nil everywhere and the error handling is a mess. How can we simplify it?","Should my deleteFile function throw an error if the file doesn't exist?","Too many try/catch blocks in this parser — help me reduce the error handling complexity."],
+"decoys":["The server crashes with 'connection refused' at startup, figure out why.","Add structured logging to the service.","Write unit tests for the parser."]}
