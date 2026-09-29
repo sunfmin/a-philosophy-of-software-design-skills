@@ -1,0 +1,2 @@
+{"should_fire":["Should ConfigReader and ConfigWriter in store.go be separate classes or merged?","This function is 120 lines long, should I split it into smaller functions?","Store just forwards every call to Cache. Should I merge them? Where should this code live?"],
+"decoys":["Split this CSV file into chunks of 1000 rows.","Join these two database tables on user_id.","Is the error handling in store.go too complicated?"]}
