@@ -26,20 +26,26 @@ Judge every finding by what it costs the **reader**, not the writer.
 | Information leakage | One design decision (format, protocol, ordering) is known by 2+ modules, even if nothing in their interfaces shows it. |
 | Temporal decomposition | Modules split by execution order (read → parse → write) and share knowledge. |
 | Overexposure | Common use forces callers to learn rare features; missing defaults. |
+| Single-use method | Designed for exactly one caller or situation (`backspace()` on a text class). |
+| Caller glue | Using the module for today's need takes lots of extra caller code: the interface lacks the right functionality. |
 | Pass-through method | Forwards arguments to a method with a near-identical signature. |
 | Pass-through variable | A parameter threaded through layers that never use it. |
+| Global state | Globals, or a context object used as a grab-bag, create hidden dependencies (no second instance, hard to test). |
 | Same abstraction in adjacent layers | Layers or decorators add boilerplate but no new abstraction. |
 | Repetition | The same nontrivial snippet appears in several places. |
 | Special-general mixture | General mechanism contains code for one specific use. |
 | Special cases | `if` checks for edge cases the normal path could absorb (e.g. an empty selection instead of "no selection"). |
 | Conjoined methods | You can't understand one without reading the other. |
 | Config punt | Exposed knob the module could compute or default itself. |
+| Exposed internals | Getters/setters or returned internal collections leak representation; `private` is not information hiding. |
+| Implementation inheritance | Parent and subclasses share state, so changing one requires reading the whole hierarchy. Prefer composition. |
 | Exception sprawl | Many throw or `err` sites or handlers. Hand off to `define-errors-out`. |
 | Comment repeats code | Comment could be written from the adjacent line alone. |
 | Impl contaminates interface | Interface comment describes internals. |
 | Vague / hard-to-pick name | `count`, `status`, `result`, `data`; or no short precise name exists. |
+| One name, two meanings | Same name for different things (`block` = file block or disk block). Use distinct names or types. |
 | Hard to describe | Full interface comment would be long. The design is suspect. |
-| Nonobvious code | First guess about behavior is wrong: event indirection, `Pair`, surprising side effects. |
+| Nonobvious code | First guess about behavior is wrong: event handlers with no "when called" comment, `Pair`, declared type ≠ allocated type, surprising side effects (e.g. threads outliving `main`). |
 
 ## Too far (don't flag)
 
