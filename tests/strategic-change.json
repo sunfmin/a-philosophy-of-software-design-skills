@@ -1,0 +1,2 @@
+{"should_fire":["I need to add TTL expiry to the Store in store.go. Don't just patch it — do it the right way so the design stays clean.","Quick fix or proper fix? The Delete bug in store.go keeps coming back.","Before I commit, check whether my change to store.go made the design worse."],
+"decoys":["Fix the typo in the README.","Review this PR from my teammate for design problems.","I'm starting a brand-new rate limiter package; what should its API look like?"]}
